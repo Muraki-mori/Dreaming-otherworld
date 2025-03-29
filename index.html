@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>幻想計画</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>幻想計画</title>
+        <meta name="description" content="幻想計画は、村木と清永凜による共同制作ユニット。映像や本を通して、誰も見たことのない世界を探求しています。">
+        <meta name="keywords" content="幻想計画, アート, 映像, ギャラリー, 現代美術, 共同制作">
+        <meta name="author" content="幻想計画">
+        <meta property="og:title" content="幻想計画">
+        <meta property="og:description" content="村木と清永凜によるアートユニット。映像、本、リンクなどを紹介。">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://dreaming-otherworld.neocities.org/">
+        <meta property="og:site_name" content="幻想計画">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    </head>
+    
 <body>
+    <nav class="nav">
+     <a href="#welcome">Welcome</a>  |
+     <a href="#about">About</a>  |
+     <a href="#works">Works</a>  |
+     <a href="#links">Links</a>
+    </nav>
 
     <header>
      <h1>幻想計画</h1>
@@ -54,14 +72,15 @@
                 title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+                </iframe>
+            </div>
          </li>
-        
+        </ul>
         <h3>本</h3>
-         <li>
+        <ul>
+            <li>
 
-         </li>
-          <!-- 作品が増えたらここに<li>を足していけばOK -->
+            </li>
         </ul>
    </section>
     
@@ -77,6 +96,20 @@
     </ul>
    </section>
 
+   <section id="Contact">
+    <h2>Contact</h2>
+    <p>各種ご連絡の方はこちらまで</p>
+    <form action="https://formsubmit.co/dreaming.otherworld@gmail.com" method="POST">
+        <label for="name">名前：</label><br>
+        <input type="text" name="name" required><br><br>
+      
+        <label for="message">メッセージ：</label><br>
+        <textarea name="message" rows="5" required></textarea><br><br>
+       
+        <button type="submit">送信</button>
+        <input type="submit" value="送信">
+      </form>
+   </section>
 
     <footer>
         <p>（© 2025 幻想計画）</p>
