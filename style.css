@@ -328,8 +328,8 @@ a:hover {
 }
 
 .base-icon-button img {
-  width: 80%;
-  height: 80%;
+  width: 24px;
+  height: auto;
   object-fit: contain;
   display:block;
 }
