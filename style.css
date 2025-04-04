@@ -334,7 +334,15 @@ a:hover {
 }
 
 
-
+/* 共通アイコン画像サイズ指定 */
+.x-icon-button img,
+.yt-icon-button img,
+.base-icon-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
 
 @media screen and (max-width: 600px) {
   h1 {
