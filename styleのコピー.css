@@ -1,0 +1,271 @@
+body {
+  background: url('grass-texture.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  color: #caffea;
+  font-family: 'Segoe UI', 'Noto Sans JP', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+  z-index: -1;
+}
+
+h1 {
+  color: rgb(152, 121, 174);
+}
+
+main {
+  max-width: 960px;
+  margin-left: 0%;
+  margin-right: auto;
+  padding: 20px;
+}
+
+a {
+  color: #9fd3ff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  text-shadow:
+    0 0 4px rgba(159, 211, 255, 0.8),
+    0 0 12px rgba(159, 211, 255, 0.5);
+}
+
+.nav {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
+  font-family: monospace;
+  border-bottom: 1px solid #444;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav a {
+  color: #c0c0c0;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.welcome-image {
+  display: block;
+  margin: 30px auto;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.15);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9アスペクト比 */
+  height: 0;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.window {
+  position: relative;
+  width: 480px;
+  margin: 60px auto;
+  backdrop-filter: blur(12px);
+  font-family: 'Shippori Mincho', serif;
+  border: 2px solid #c3c7cb;
+  background: rgba(220, 215, 200, 0.7);
+  border-top: 2px solid #ffffff;    /* 上：明るい */
+  border-left: 2px solid #ffffff;   /* 左：明るい */
+  border-bottom: 2px solid #808080; /* 下：暗い */
+  border-right: 2px solid #808080;  /* 右：暗い */
+  border-radius: 2px;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+.window-header {
+  height: 24px;
+  background: linear-gradient(90deg, #9fdfff, #e4a7ff);
+  padding: 2px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  color: #ffffff;
+  border-top: 0.3px solid #eee;
+  text-shadow: 0 1px 0 #00000030;
+}
+
+.window-body {
+  padding: 16px;
+  color: #000;
+  background: rgba(220, 215, 200, 0.7);
+  border-top: none;
+}
+.window-close {
+  background: #fff;
+  border: none;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.window-controls {
+  display: flex;
+  gap: 2px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 10;
+}
+
+.control-btn {
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  font-family: 'Courier New', monospace;
+  color: #111;
+  background: #dcd7c8; /* rgba(220, 215, 200, 1) に近い不透明な色 */
+  border: 1px solid #888;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #666;
+  transition: background 0.2s ease;
+}
+
+.control-btn:hover {
+  background: #cceaff;
+  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #444;
+}
+
+.control-btn.close {
+  background: #ff6b6b;
+  color: white;
+  font-weight: bold;
+}
+
+.control-btn.close:hover {
+  background: #ff3b3b;
+}
+
+
+.wallpaper {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.window-body .nav-button {
+  display: inline-block;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: #000;
+  background: #dcd7c8;
+  border: 2px solid #888;
+  padding: 6px 12px;
+  margin: 8px 4px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #666;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.window-body .nav-button:hover {
+  background: #cceaff;
+  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #444;
+}
+
+.retro-button {
+  display: inline-block;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  padding: 4px 16px;
+  margin: 0 4px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #dcd7c8; /* ウィンドウ本体に合わせた色 */
+  border: 2px solid #fff;
+  border-right-color: #808080;
+  border-bottom-color: #808080;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 1px 1px 0 #00000088;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.retro-button:hover {
+  background-color: #e9e5db;
+  box-shadow: 1px 1px 0 #333;
+}
+
+.nav-buttons {
+  margin-top: 16px;
+  text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  h2, h3 {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  main {
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .nav {
+    font-size: 0.8em;
+    padding: 8px 0;
+  }
+
+  .video-wrapper {
+    padding-bottom: 56.25%;
+  }
+}

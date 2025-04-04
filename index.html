@@ -12,109 +12,86 @@
   <meta property="og:url" content="https://dreaming-otherworld.neocities.org/">
   <meta property="og:site_name" content="幻想計画">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleのコピー.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <nav class="nav">
-    <a href="#welcome">Welcome</a> |
-    <a href="#about">About</a> |
-    <a href="#works">Works</a> |
-    <a href="#links">Links</a> |
-    <a href="#contact">Contact</a>
-  </nav>
+<body class="welcome-body">
 
-  <header>
+  <!-- Welcome Section -->
+  <div class="welcome-container">
     <h1>幻想計画</h1>
-  </header>
+  </div>
 
-  <main>
-    <section id="welcome">
-        <h2>ようこそ</h2>
-        <p>幻想計画のホームページへ。</p>
-      
-        <img src="senkianten.jpg" alt="幻想イメージビジュアル" class="welcome-image">
-      
-        <p>
-         黎明
-        </p>
-    </section>
-      
+  <!-- Navigation Window -->
+<div class="window">
+  <div class="window-header">
+    <span class="window-title">Navigation</span>
+    <div class="window-controls" role="group" aria-label="ウィンドウ操作">
+      <button class="control-btn minimize" title="最小化" aria-label="最小化">−</button>
+      <button class="control-btn maximize" title="最大化" aria-label="最大化">□</button>
+      <button class="control-btn close" title="閉じる" aria-label="閉じる">✕</button>
+    </div>
+  </div>
+  <div class="window-body">
+    <h3>どちらに進みますか？</h3>
+    <div class="nav-buttons">
+      <a href="about.html" class="retro-button">about</a>
+      <a href="works.html" class="retro-button">works</a>
+    </div>
+  </div>
+  
+</div>
 
-    <section id="about">
-      <h2>幻想計画とは</h2>
-      <p>
-        我々幻想計画は、村木と清永凜による共同制作プロジェクトです。<br>
-        まだ誰も見たことのないものを作っていくべく、日々活動しています。
-      </p>
-    </section>
 
-    <section id="works">
-      <h2>Works</h2>
-      <p>幻想計画がこれまでに制作した作品です。</p>
+  <!-- Links Section -->
+<div class="window">
+  <div class="window-header">
+    <span class="window-title">Links</span>
+    <div class="window-controls" role="group" aria-label="ウィンドウ操作">
+      <button class="control-btn minimize" title="最小化" aria-label="最小化">−</button>
+      <button class="control-btn maximize" title="最大化" aria-label="最大化">□</button>
+      <button class="control-btn close" title="閉じる" aria-label="閉じる">✕</button>
+    </div>
+  </div>
+  <div class="window-body">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://x.com/traumerei_c" target="_blank">X (旧Twitter)</a></li>
+      <li><a href="https://www.youtube.com/@幻想計画" target="_blank">YouTube</a></li>
+      <li><a href="https://otherworld.base.shop" target="_blank">BASE 通販</a></li>
+    </ul>
+  </div>
+</div>
 
-      <h3>映像作品</h3>
-      <ul>
-        <li>
-          <strong>VISION(omit U)</strong><br>
-          マルチメディア・インスタレーション作品『VISION』の映像部分。<br>
-          1024×768／1分45秒
-          <div class="video-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GOm4DcDlnFM?si=oIQA6qSOvM4XZUZR"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </li>
-        <li>
-          <strong>電想</strong><br>
-          彼女(He/She)についての映像。
-          <div class="video-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/65BynjeScyE?si=2sBwh_EPufBbSR7W"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </li>
-      </ul>
+<!-- Contact Section -->
+<div class="window">
+  <div class="window-header">
+    <span class="window-title">Contact</span>
+    <div class="window-controls" role="group" aria-label="ウィンドウ操作">
+      <button class="control-btn minimize" title="最小化" aria-label="最小化">−</button>
+      <button class="control-btn maximize" title="最大化" aria-label="最大化">□</button>
+      <button class="control-btn close" title="閉じる" aria-label="閉じる">✕</button>
+    </div>
+  </div>
+  <div class="window-body">
+    <h2>Contact</h2>
+    <p>幻想計画へのご連絡はこちらから。</p>
+    <form action="https://formsubmit.co/dreaming.otherworld@gmail.com" method="POST" target="_blank">
+      <label for="name">名前：</label><br>
+      <input type="text" name="name" required><br><br>
 
-      <h3>本</h3>
-      <ul>
-        <li>（準備中）</li>
-      </ul>
-    </section>
+      <label for="message">メッセージ：</label><br>
+      <textarea name="message" rows="5" required></textarea><br><br>
 
-    <section id="links">
-      <h2>Links</h2>
-      <p>各種SNSで幻想計画の最新活動をチェックできます♪ 通販で過去作品も販売中！</p>
-      <ul>
-        <li>▶︎ <a href="https://x.com/traumerei_c" target="_blank">Twitter (現X)</a></li>
-        <li>▶︎ <a href="https://www.youtube.com/@幻想計画" target="_blank">YouTube</a></li>
-        <li>▶︎ <a href="https://otherworld.base.shop" target="_blank">通販（BASE）</a></li>
-      </ul>
-    </section>
+      <input type="submit" value="送信">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </div>
+</div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>幻想計画へのメッセージはこちらから。</p>
-      <form action="https://formsubmit.co/dreaming.otherworld@gmail.com" method="POST" target="_blank">
-        <label for="name">名前：</label><br>
-        <input type="text" name="name" required><br><br>
+ 
 
-        <label for="message">メッセージ：</label><br>
-        <textarea name="message" rows="5" required></textarea><br><br>
-
-        <input type="submit" value="送信">
-        <input type="hidden" name="_captcha" value="false">
-
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>（© 2025 幻想計画）</p>
-  </footer>
 </body>
 </html>
