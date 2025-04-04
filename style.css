@@ -241,6 +241,98 @@ a:hover {
   text-align: center;
 }
 
+.x-icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #dcd7c8; /* ウィンドウと統一 */
+  border-top: 2px solid #ffffff;    /* 明るい */
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #808080; /* 暗い */
+  border-right: 2px solid #808080;
+  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #666;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+}
+
+.x-icon-button:hover {
+  background-color: #ece8de;
+  box-shadow: inset -1px -1px 0 #eee, inset 1px 1px 0 #444;
+}
+
+.x-icon-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.yt-icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #dcd7c8;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #808080;
+  border-right: 2px solid #808080;
+  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #666;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+  margin-left: 8px; /* 隣と少し間隔を空けたいとき用 */
+}
+
+.yt-icon-button:hover {
+  background-color: #ece8de;
+  box-shadow: inset -1px -1px 0 #eee, inset 1px 1px 0 #444;
+}
+
+.yt-icon-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.base-icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #eae6dc;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #808080;
+  border-right: 2px solid #808080;
+  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #666;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+  margin-left: 8px;
+}
+
+.base-icon-button:hover {
+  background-color: #f5f2e8;
+  box-shadow: inset -1px -1px 0 #eee, inset 1px 1px 0 #444;
+}
+
+.base-icon-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 
 
 
