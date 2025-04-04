@@ -328,8 +328,8 @@ a:hover {
 }
 
 .base-icon-button img {
-  width: 24px;
-  height: auto;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
   display:block;
 }
@@ -377,7 +377,7 @@ a:hover {
 
 /* 共通アイコン画像サイズ指定 */
 .x-icon-button img,
-.yt-icon-button img 
+.yt-icon-button img,
 .insta-icon-button img {
   width: 24px;
   height: 24px;
