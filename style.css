@@ -308,7 +308,7 @@ a:hover {
   align-items: center;
   width: 48px;
   height: 48px;
-  background-color: #eae6dc;
+  background-color: #dcd7c8;
   border-top: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
   border-bottom: 2px solid #808080;
@@ -329,16 +329,56 @@ a:hover {
 
 .base-icon-button img {
   width: 24px;
-  height: 24px;
+  height: auto;
   object-fit: contain;
   display:block;
+}
+
+.insta-icon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #dcd7c8;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #808080;
+  border-right: 2px solid #808080;
+  box-shadow: inset -1px -1px 0 #fff, inset 1px 1px 0 #666;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+  margin-left: 8px;
+}
+
+.insta-icon-button:hover {
+  background-color: #ece8de;
+  box-shadow: inset -1px -1px 0 #eee, inset 1px 1px 0 #444;
+}
+
+.insta-icon-button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+.link-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
 }
 
 
 /* 共通アイコン画像サイズ指定 */
 .x-icon-button img,
-.yt-icon-button img,
-.base-icon-button img {
+.yt-icon-button img 
+.insta-icon-button img {
   width: 24px;
   height: 24px;
   object-fit: contain;
